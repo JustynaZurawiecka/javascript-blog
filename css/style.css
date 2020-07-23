@@ -111,4 +111,35 @@ body {
 .post-tags ul a {
   margin: 5px;
 }
+
+/* Tags */
+.tag-size-1 {
+  font-size: smaller;
+  color: red;
+  display: inline-block;
+}
+
+.tag-size-2 {
+  font-size: small;
+  color: orangered;
+  display: inline-block;
+}
+
+.tag-size-3 {
+  font-size: medium;
+  color: green;
+  display: inline-block;
+}
+
+.tag-size-4 {
+  font-size: large;
+  color: grey;
+  display: inline-block;
+}
+
+.tag-size-5 {
+  font-size: larger;
+  color: purple;
+  display: inline-block;
+}
 /*# sourceMappingURL=style.css.map */
