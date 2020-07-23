@@ -18,32 +18,18 @@ function calculateTagsParams(tags) {
 
     numberTagsList.push(parseFloat(tags[key]));
   }
-  // console.log(numberTagsList);
-  // console.log(tagsMinMax);
 
-  // tags.min = Math.min(...numberTagsList);
-  // tags.max = Math.max(...numberTagsList);
   const tagMin = Math.min(...numberTagsList);
   const tagMax = Math.max(...numberTagsList);
-  // console.log('tags.min= ',tags.min);
-  // console.log('tags.max = ',tags.max);
 
   let tagsMinMax = {
     min: tagMin,//tags.min,
     max: tagMax,//tags.max,
   };
-  // tagsMinMax.push(tags.min);
-  // tagsMinMax.push(tags.max);
-  // console.log(tagsMinMax);
 
   return tagsMinMax;
 
-  // const tagsMinMax1= {min: tags.min, max: tags.max}
-  // console.log(tagsMinMax1);
-  // // tagsMinMax[min] = tags.min;
 }
-
-
 function calculateTagClass(count, params) {
   // count = allTags[tag] = liczba wyświetleń danego tagu
   // params = tagsParams = obiekt z max i min
@@ -201,7 +187,7 @@ function generateAuthors() {
     // console.log('author dddupa',author);
     /* [NEW] generate code of a link and add it to allAuthorsHTML */
 
-    const authorLinkRight = '<li><a href="#">' + author + '</a></li>' + '\n';
+    const authorLinkRight = '<li><a href="#" class="' + calculateTagClass(allAuthors[author], authorsParams) + '">' + author + '</a></li>';
 
     allAuthorsHTML += authorLinkRight;
 
